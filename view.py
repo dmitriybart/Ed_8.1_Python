@@ -43,8 +43,16 @@ def load_succes():
 def save_succes():
     print('Телефонная книга сохранена')
 
+def remove_succes():
+    print('\nКонтакт удален')
+
 def input_new_contact():
     name = input('Введите имя контакта: ')
     phone = input('Введите телефон контакта: ')
     comment = input('Введите комментарий к контакту: ')
     return [name, phone, comment]
+
+def input_remove_contact():
+    id = int(input('Введите ID контакта, который желаете удалить: '))
+    return id
+

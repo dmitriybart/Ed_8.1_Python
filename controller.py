@@ -19,7 +19,11 @@ def main_menu_prog(choice: int):
         case 5:
             pass
         case 6:
-            pass
+            phone_book = f.get_phone_book()
+            v.print_phone_book(phone_book)
+            id = v.input_remove_contact()
+            if f.remove_contact(id):
+                v.remove_succes()
         case 7:
             pass
         case 8:
@@ -28,8 +32,10 @@ def main_menu_prog(choice: int):
             pass
         case 0:
             return True # для того чтобы сработал If и мы вышли из программы
-while True:
-    choice = v.main_menu()
-    if main_menu_prog(choice):
-        v.log_off()
-        break
+
+def start():
+    while True:
+        choice = v.main_menu()
+        if main_menu_prog(choice):
+            v.log_off()
+            break
