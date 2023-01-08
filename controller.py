@@ -11,9 +11,11 @@ def main_menu_prog(choice: int):
             db.load_data_base()
             v.load_succes()
         case 3:
-            pass
+            db.save_data_base()
+            v.save_succes()
         case 4:
-            pass
+            contact = v.input_new_contact()
+            f.add_contact(contact)
         case 5:
             pass
         case 6:

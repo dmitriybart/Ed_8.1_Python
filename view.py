@@ -39,3 +39,12 @@ def log_off():
 
 def load_succes():
     print('Телефонная книга загружена')
+
+def save_succes():
+    print('Телефонная книга сохранена')
+
+def input_new_contact():
+    name = input('Введите имя контакта: ')
+    phone = input('Введите телефон контакта: ')
+    comment = input('Введите комментарий к контакту: ')
+    return [name, phone, comment]
